@@ -204,6 +204,7 @@ from DataSource > active()
 ## Create A New NumberSequence
 
 ============================================
+
 it will generate new id when we click on a new button
 
 1. Edt string
