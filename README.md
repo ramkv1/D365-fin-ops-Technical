@@ -187,11 +187,11 @@ from Datasource > initValue() >> table level >> initvalue()
 
 from DataSource > active()
 
-=========================
+==================================================
 
 ### saving record in form level
 
-============================
+================================================
 
 from DataSource> validatewrite() >>> table level >> validatewrite()
 
@@ -199,9 +199,11 @@ from DataSource > write() >>> table level >> insert()
 
 from DataSource > active()
 
-=================================
-Create A New NumberSequence
-===========================
+=============================================
+
+## Create A New NumberSequence
+
+============================================
 it will generate new id when we click on a new button
 
 1. Edt string
