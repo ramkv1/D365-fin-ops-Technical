@@ -146,9 +146,9 @@ Action MenuItem > class
 
 output menuitem > report
 
-###### Form method calling sequence
+# Form method calling sequence
 
-# form opening
+###### form opening
 
 form level > init() >> from DataSource > init()
 
@@ -166,7 +166,7 @@ form level > CLose()
 
 form level > Closed()
 
-# I creating new record in form level
+###### I creating new record in form level
 
 from DataSource > create()
 
@@ -174,7 +174,7 @@ from Datasource > initValue() >> table level >> initvalue()
 
 from DataSource > active()
 
-# saving record in form level
+###### saving record in form level
 
 from DataSource> validatewrite() >>> table level >> validatewrite()
 
