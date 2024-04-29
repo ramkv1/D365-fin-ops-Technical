@@ -116,21 +116,17 @@ https://dynamics365musings.com/d365-data-entity/
 
 https://dynamics365musings.com/create-a-d365-data-entity/
 
-###################################################
-
-#### FORMS
-
-#######################################################
+# FORMS
 
 Form level logic>>
 
 1. form level methods
 
-2, data source level methods
+2. data source level methods
 
 3. data source field level menthods
 
-4, design control level methods
+4. design control level methods
 
 Form creation > menu item > adding meni item in menus
 
@@ -149,15 +145,9 @@ Action MenuItem > class
 
 output menuitem > report
 
-===================================
+###### Form method calling sequence
 
-Form method calling sequence
-
-===========================
-
-## form opening
-
-============================
+# form opening
 
 form level > init() >> from DataSource > init()
 
@@ -175,11 +165,7 @@ form level > CLose()
 
 form level > Closed()
 
-#################################################
-
-### I creating new record in form level
-
-################################################
+# I creating new record in form level
 
 from DataSource > create()
 
@@ -187,11 +173,7 @@ from Datasource > initValue() >> table level >> initvalue()
 
 from DataSource > active()
 
-==================================================
-
-### saving record in form level
-
-================================================
+# saving record in form level
 
 from DataSource> validatewrite() >>> table level >> validatewrite()
 
@@ -199,11 +181,7 @@ from DataSource > write() >>> table level >> insert()
 
 from DataSource > active()
 
-=============================================
-
-## Create A New NumberSequence
-
-============================================
+# Create A New NumberSequence
 
 it will generate new id when we click on a new button
 
