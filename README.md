@@ -136,7 +136,8 @@ Action MenuItem > class
 
 output menuitem > report
 
-========================================================
+# Form
+
 Form creation > menu item > adding meni item in menus
 
 Display MenuItem > form
