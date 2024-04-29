@@ -115,3 +115,109 @@ https://learn.microsoft.com/en-us/azure/active-directory-b2c/access-tokens
 https://dynamics365musings.com/d365-data-entity/
 
 https://dynamics365musings.com/create-a-d365-data-entity/
+
+###################################################
+
+#### FORMS
+
+#######################################################
+
+Form level logic>>
+
+1. form level methods
+
+2, data source level methods
+
+3. data source field level menthods
+
+4, design control level methods
+
+Form creation > menu item > adding meni item in menus
+
+Display MenuItem > form I
+
+Action MenuItem > class
+
+output menuitem > report
+
+========================================================
+Form creation > menu item > adding meni item in menus
+
+Display MenuItem > form
+
+Action MenuItem > class
+
+output menuitem > report
+
+===================================
+
+Form method calling sequence
+
+===========================
+
+## form opening
+
+============================
+
+form level > init() >> from DataSource > init()
+
+form level >run() >> from DataSource > executeQuery()
+
+from DataSource > active()
+
+form level > closed()
+
+form closing
+
+form level > canClose()
+
+form level > CLose()
+
+form level > Closed()
+
+#################################################
+
+### I creating new record in form level
+
+################################################
+
+from DataSource > create()
+
+from Datasource > initValue() >> table level >> initvalue()
+
+from DataSource > active()
+
+=========================
+
+### saving record in form level
+
+============================
+
+from DataSource> validatewrite() >>> table level >> validatewrite()
+
+from DataSource > write() >>> table level >> insert()
+
+from DataSource > active()
+
+=================================
+Create A New NumberSequence
+===========================
+it will generate new id when we click on a new button
+
+1. Edt string
+
+every module has one num seq class
+
+2. loadModue() to load edt
+
+every module has one parameter table
+
+3. this table is used for setups
+
+4. need create reference
+
+need to run job for number sequence
+
+5. functional setups,
+
+6.nedd to write logic in table initvalue()
