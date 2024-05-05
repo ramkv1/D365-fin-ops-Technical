@@ -1,5 +1,8 @@
 ### D365F-O-Technical
 
+# Create deployable packages of models
+https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package
+
 # MorphX and Intellimorph
 
 https://community.dynamics.com/blogs/post/?postid=748905e7-8caf-4cb7-97fe-3512f2067cb8#:~:text=MorphX%20is%20an%20integrated%20development,to%20use%20this%20MorphX%20IDE.
