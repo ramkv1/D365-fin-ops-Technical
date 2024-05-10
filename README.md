@@ -14,7 +14,7 @@
 | 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo) |
 | 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                   |
 | 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                           |
-| 9   | [What is Dynamics 365 F&O?](#)                                                                                     |
+| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                       |
 | 10  | [What is Dynamics 365 F&O?](#)                                                                                     |
 | 11  | [What is Dynamics 365 F&O?](#)                                                                                     |
 | 12  | [What is Dynamics 365 F&O?](#)                                                                                     |
@@ -149,21 +149,21 @@
 
 #### What is an Extended Data Type?
 
-        Extended Data Types are commonly mentioned as EDTs. They extend base types, such as
-        Strings, and Integers, by adding properties that affect the looks, behavior, data
-        (size), and table reference/relationships. This means we can have types like Customer
-        account that has a label, size, table relation information, and other properties that provide
-        consistency and greater understanding within the data model.
-        Another example of an EDT is Name. Should we change the StringSize property of this
-        field, all fields extends this EDT are going to be adjusted; and if we reduce string size, it’ll truncate
-        the values to the new size.
-        All fields should extend an EDT or an Enum.
+    Extended Data Types are commonly mentioned as EDTs. They extend base types, such as
+    Strings, and Integers, by adding properties that affect the looks, behavior, data
+    (size), and table reference/relationships. This means we can have types like Customer
+    account that has a label, size, table relation information, and other properties that provide
+    consistency and greater understanding within the data model.
+    Another example of an EDT is Name. Should we change the StringSize property of this
+    field, all fields extends this EDT are going to be adjusted; and if we reduce string size, it’ll truncate
+    the values to the new size.
+    All fields should extend an EDT or an Enum.
 
 ##### How to create Extended Data Type?
 
-        We will create an EDT for the Vehicle number. A vehicle table is a similar pattern to
-        customers, and vendors, and we will extend the AccountNum Extended Data Type.
-        To create the EDT, follow these steps:
+    We will create an EDT for the Vehicle number. A vehicle table is a similar pattern to
+    customers, and vendors, and we will extend the AccountNum Extended Data Type.
+    To create the EDT, follow these steps:
 
 1. EDT is created like all new AX artifacts, by pressing
    Control+Shift+A or right-clicking on a folder in the solution explorer and choose Add | New Item.
@@ -197,6 +197,64 @@
    We often extend specific EDTs, when creating an EDT for certain types of fields
 
 **[⬆ Back to Top](#table-of-contents)**
+
+9. ### What is an index in D365 FO?
+
+   An index is a table-specific database structure that speeds the retrieval of rows from a table. Indexes are used to improve the performance of data retrieval and occasionally to ensure the existence of unique records.
+
+   There are two types of indexes unique and non-unique. Whether an index is unique is defined by the index’s AllowDuplicates property. When this property is set to No, a unique index is created. The database uses the unique index to ensure that no duplicate key values occur. The database prevents you from inserting records with duplicate key values by rejecting the insert.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+10. ### What are Delete Actions in D365 FO?
+
+    ##### Deleted Actions/ OnDelete with Example – Microsoft Dynamics 365 F&O
+
+        Delete Actions and OnDelete property indicates how deletions in the main table are handled in the related tables or child tables. There are 3 types of options are available i.e. Cascade, Restricted & CascadeRestricted.
+
+        The delete action and OnDelete property (available only for Microsoft D365 finance and operations) help to maintain database consistency.
+
+        Before the release of Microsoft Dynamics 365 for operations , in Microsoft Dynamics AX , there was only one option available i.e Delete Actions.
+
+        But in Microsoft Dynamics 365 finance and operations we have 2 options available. The first one is the traditional approach which was also available in Microsoft Dynamics AX i.e. Delete Actions. The second one is a new approach and recommended in Microsoft Dynamics 365 for finance and operations. This include defining “On Delete” property Below will show some example how to create delete actions using OnDelete properties:
+
+        1.Create 2 tables, parent table and child table.
+
+        ![alt text](image.png)
+
+        2.Add fields in Parent table and Child table, In our case: Id is primary key on parent table and ParentId is foreign key in Child tabe.
+
+        ![alt text](image-1.png)
+
+
+        3.Create a primary key for Parent table, For this create a Index and set Alternative key true and Allow duplicate set to no.
+
+        ![alt text](image-2.png)
+
+        4. Now expand relationship node of child table and right click than add foreign key relation
+
+        ![alt text](image-3.png)
+
+        In the On Delete property we chose Delete Action Type (In our case Cascade)
+
+        ![alt text](image-4.png)
+
+        Now we can fill our tables with some test Data
+
+        ![alt text](image-5.png)
+
+        If we delete Owner2 in Parent table, the related record in child table will be deleted automatically.
+
+
+        ![alt text](image-6.png)
+
+    #### Delete Actions Types
+
+        First type and option is CASCADE. For example : If you have one parent table ParentTable and you have one child or related table ChildTable . If you are going to use CASCADE delete action or On delete property then on deletion of records in TABLE ParentTable , related records in TABLE ChildTable will also get deleted. (OurCase)
+
+        Second type and option is RESTRICTED. For example : If you have one parent table ParentTable and you have one child or related table ChildTable. If you are going to use RESTRICTED delete action or On delete property then on deletion of record in TABLE ParentTable , system will not validate records in related Table ChildTable. If related record exits in Table ChildTable then system will not allow you to delete record in Table ParentTable and throw an error.
+
+        Second type and option is CASCADE RESTRICTED. For example : if we have 3 tables i.e. parent table Vehicle & related tables Car & CarManufacturer. Table CarManufacturer is child or related table of Table CAR and similarly Table CAR is child or related table of parent Table Vehicle. If we will set the delete action CASCADE in between Parent Table Vehicle and Related Table CAR and again if we will set the delete action CASCADE RESTRICTED in between Table CAR and Related Table CarManufacturer. Then on deletion of record in Parent TABLE VEHICLE, system will also delete all the related records of TABLE CAR & CarManufacturer. But if you will try to delete records in Car and related records exists in Table CarManufacturer then system will not allow to delete records.
 
 # ===============================================================================================================================================================
 
