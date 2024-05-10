@@ -4,22 +4,22 @@
 
 ### Table of Contents
 
-| No. | Questions                                                                                                          |
-| --- | ------------------------------------------------------------------------------------------------------------------ |
-| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)                                                              |
-| 2   | [What are OOPS concepts?](#what-are-oops-concepts)                                                                 |
-| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)                                                                   |
-| 4   | [Interfaces & Abstract Class](#interfaces--abstract-class)                                                         |
-| 5   | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365)                             |
-| 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo) |
-| 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                   |
-| 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                           |
-| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                       |
-| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                         |
-| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)           |
-| 12  | [What is Dynamics 365 F&O?](#)                                                                                     |
-| 13  | [What is Dynamics 365 F&O?](#)                                                                                     |
-| 14  | [What is Dynamics 365 F&O?](#)                                                                                     |
+| No. | Questions                                                                                                                                          |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)                                                                                              |
+| 2   | [What are OOPS concepts?](#what-are-oops-concepts)                                                                                                 |
+| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)                                                                                                   |
+| 4   | [Interfaces & Abstract Class](#interfaces--abstract-class)                                                                                         |
+| 5   | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365)                                                             |
+| 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo)                                 |
+| 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                                                   |
+| 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                                                           |
+| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                                                       |
+| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                                                         |
+| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)                                           |
+| 12  | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365)                                                                             |
+| 13  | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365)                               |
+| 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc) |
 
 1. ### What is Dynamics 365 F&O?
 
@@ -483,6 +483,94 @@ Step 3 – Add the action button to a module. In my case I added it to the Inven
             }
 
         }
+
+**[⬆ Back to Top](#table-of-contents)**
+
+12. ### What are Table Relations in D365?
+
+    A table relation associates two tables that contain related information. Usually the primary key field of one table appears as a foreign key field of the related table. The table with the primary key is called the parent table. The table with the foreign key is called the child table.
+
+    In Microsoft Dynamics 365 there are :
+
+    . Normal Relation
+    . Field Fixed Relation
+    . Related Field Fixed Relation
+    . Foreign Key Relation
+
+    A normal relation is used to specify a relation without any conditions. A normal relation specifies related fields in another table. Multiple fields can also be added in normal relations.
+
+    Condition is , Table1.Field = Table2.Field
+
+    A Field Fixed Relation is used to specify relation fields to restrict the records in the primary table. Only records that meet the condition are selected. The field fixed is normally an enum.
+
+    The condition is ANDed with your relation here Table.Field = <EnumValue>
+
+    A Related Field Fixed Relation is used to specify relation fields to restrict the records in the related table. Only records that meet the condition are selected.The Related field fixed is normally an enum.
+
+    The condition is ANDed with your relation here, <EnumValue> = Table.Field
+
+    A Foreign Key Relation is used to specify a correspondence between a foreign key field in the present table to the primary key field in another parent table.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+13. ### What are different type of Menu Items available in D365?
+
+    There are three types of menu items in D365 FO:
+
+    Display Menu Item: Use this type when the menu item will open a form.
+
+    Output Menu Item: Use this type when the menu item will opening an SSRS report.
+
+    Action Menu Item: Use this type when the menu item will run a batch job. Or some other process, such as run by a class.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+14. #### Dynamics 365 Finance & Operations – How to use chain of command in X++ (CoC)
+
+Chain of Command (CoC) enables strongly typed extension capabilities of public and protected methods. It is an amazing piece of development capability that allows technical consultants to extend the application avoiding over-layering.
+
+Microsoft has implemented chain of command across Classes, Tables, Forms, form data sources, and data field methods.
+
+Before we dive into the Chain of Command methods, remember that in order to use CoC you must declare your class as final, and your methods should always contain the next keyword.
+
+The next keyword behaves like a super, and it will define when your extended logic executes. The next call after your code behaves like a Pre-event handler, your logic executes first, and later on, the logic residing in the original method gets executed. The next call before your code behaves like a Post event handler, your logic executes after the code residing in the original method gets executed.
+
+### How to use chain of command to extend the class method
+
+In the below screenshot, I am using method wrapping or class extension of standard class:
+
+1. We need to check if the method that we want to extend is public or protected, in our example modifyVoucherDate is public.
+
+![alt text](image-7.png)
+
+2. Create a final class that extends the PurchFormLetter_ApproveJournal class.
+
+3. If we want to customize the process before the modifyVoucherDate method is executed, write our code before the next keyword, otherwise after the next keyword.
+
+![alt text](image-8.png)
+
+We can use chain of command in tables, forms, form data source, etc in the same way as we use it for a class method, the only thing that changes is the keyword inside ExtensionOf.
+
+Below you can find the different keywords you need to use in each case:
+
+. [ExtensionOf(classStr(PurchFormLetter_ApproveJournal))] – class extension
+. [ExtensionOf(tableStr(tableName))] – table extension
+. [ExtensionOf(formStr(FormName)] – form extension
+. [ExtensionOf(formdatasourceStr(FormName,dataSourceName)] – form data source extension
+. [ExtensionOf(formControlStr(FormName,controlName)] – form control extension
+
+### Benefits Of Using Change Of Commands instead of Old Overlayering approach in Microsoft Dynamics 365 Finance and Operations
+
+1. Easy Future upgrades and version enhancements as you are not overlaying in standard classes or methods or objects & keeping you separate extension classes.
+2. Neat & Clean development as no need to compile the whole code library.
+3. Support and the maintenance of the code will be easier in the future.
+   I hope this article provided some light on the upcoming changes in Chain of Command for D365 for Finance and Operations Fall Release.
+
+To wrap up, let’s review some of the requirements and considerations while writing CoC methods on form nested concepts extensions:
+
+1. As with any other CoC method, these ones need to call always next to invoke the next in the chain, so it can go all the way to the kernel / native implementation in the runtime behavior. This is equivalent to calling super( ) from the form itself to guarantee the base behavior in the runtime is always executed as expected.
+2. It is NOT possible to add CoC to wrap methods that are not defined in the original base behavior of the nested control type. However, it is possible from the control extension to make a call into this method if it has been defined as public or protected.
+3. It is NOT needed to recompile the module where the original form is defined to have support for CoC methods on nested concepts on that form from an extension.
 
 **[⬆ Back to Top](#table-of-contents)**
 
