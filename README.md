@@ -16,7 +16,7 @@
 | 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                           |
 | 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                       |
 | 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                         |
-| 11  | [What is Dynamics 365 F&O?](#)                                                                                     |
+| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)           |
 | 12  | [What is Dynamics 365 F&O?](#)                                                                                     |
 | 13  | [What is Dynamics 365 F&O?](#)                                                                                     |
 | 14  | [What is Dynamics 365 F&O?](#)                                                                                     |
@@ -25,7 +25,7 @@
 
    Microsoft Dynamics 365 FO is a cloud based ERP (Enterprise Resource Planning) platform developed by Microsoft. Microsoft Dynamics 365 Finance & Operations has replaced the previous on premise version Dynamics AX 2012.
 
-   **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
 2. ### What are OOPS concepts?
 
@@ -208,53 +208,283 @@ To create the EDT, follow these steps:
 
 10. ### What are Delete Actions in D365 FO?
 
-    ##### Deleted Actions/ OnDelete with Example – Microsoft Dynamics 365 F&O
+##### Deleted Actions/ OnDelete with Example – Microsoft Dynamics 365 F&O
 
-        Delete Actions and OnDelete property indicates how deletions in the main table are handled in the related tables or child tables. There are 3 types of options are available i.e. Cascade, Restricted & CascadeRestricted.
+    Delete Actions and OnDelete property indicates how deletions in the main table are handled in the related tables or child tables. There are 3 types of options are available i.e. Cascade, Restricted & CascadeRestricted.
 
-        The delete action and OnDelete property (available only for Microsoft D365 finance and operations) help to maintain database consistency.
+    The delete action and OnDelete property (available only for Microsoft D365 finance and operations) help to maintain database consistency.
 
-        Before the release of Microsoft Dynamics 365 for operations , in Microsoft Dynamics AX , there was only one option available i.e Delete Actions.
+    Before the release of Microsoft Dynamics 365 for operations , in Microsoft Dynamics AX , there was only one option available i.e Delete Actions.
 
-        But in Microsoft Dynamics 365 finance and operations we have 2 options available. The first one is the traditional approach which was also available in Microsoft Dynamics AX i.e. Delete Actions. The second one is a new approach and recommended in Microsoft Dynamics 365 for finance and operations. This include defining “On Delete” property Below will show some example how to create delete actions using OnDelete properties:
+    But in Microsoft Dynamics 365 finance and operations we have 2 options available. The first one is the traditional approach which was also available in Microsoft Dynamics AX i.e. Delete Actions. The second one is a new approach and recommended in Microsoft Dynamics 365 for finance and operations. This include defining “On Delete” property Below will show some example how to create delete actions using OnDelete properties:
 
-        1.Create 2 tables, parent table and child table.
+    1.Create 2 tables, parent table and child table.
 
-        ![alt text](image.png)
+    ![alt text](image.png)
 
-        2.Add fields in Parent table and Child table, In our case: Id is primary key on parent table and ParentId is foreign key in Child tabe.
+    2.Add fields in Parent table and Child table, In our case: Id is primary key on parent table and ParentId is foreign key in Child tabe.
 
-        ![alt text](image-1.png)
-
-
-        3.Create a primary key for Parent table, For this create a Index and set Alternative key true and Allow duplicate set to no.
-
-        ![alt text](image-2.png)
-
-        4. Now expand relationship node of child table and right click than add foreign key relation
-
-        ![alt text](image-3.png)
-
-        In the On Delete property we chose Delete Action Type (In our case Cascade)
-
-        ![alt text](image-4.png)
-
-        Now we can fill our tables with some test Data
-
-        ![alt text](image-5.png)
-
-        If we delete Owner2 in Parent table, the related record in child table will be deleted automatically.
+    ![alt text](image-1.png)
 
 
-        ![alt text](image-6.png)
+    3.Create a primary key for Parent table, For this create a Index and set Alternative key true and Allow duplicate set to no.
 
-    #### Delete Actions Types
+    ![alt text](image-2.png)
 
-        First type and option is CASCADE. For example : If you have one parent table ParentTable and you have one child or related table ChildTable . If you are going to use CASCADE delete action or On delete property then on deletion of records in TABLE ParentTable , related records in TABLE ChildTable will also get deleted. (OurCase)
+    4. Now expand relationship node of child table and right click than add foreign key relation
 
-        Second type and option is RESTRICTED. For example : If you have one parent table ParentTable and you have one child or related table ChildTable. If you are going to use RESTRICTED delete action or On delete property then on deletion of record in TABLE ParentTable , system will not validate records in related Table ChildTable. If related record exits in Table ChildTable then system will not allow you to delete record in Table ParentTable and throw an error.
+    ![alt text](image-3.png)
 
-        Second type and option is CASCADE RESTRICTED. For example : if we have 3 tables i.e. parent table Vehicle & related tables Car & CarManufacturer. Table CarManufacturer is child or related table of Table CAR and similarly Table CAR is child or related table of parent Table Vehicle. If we will set the delete action CASCADE in between Parent Table Vehicle and Related Table CAR and again if we will set the delete action CASCADE RESTRICTED in between Table CAR and Related Table CarManufacturer. Then on deletion of record in Parent TABLE VEHICLE, system will also delete all the related records of TABLE CAR & CarManufacturer. But if you will try to delete records in Car and related records exists in Table CarManufacturer then system will not allow to delete records.
+    In the On Delete property we chose Delete Action Type (In our case Cascade)
+
+    ![alt text](image-4.png)
+
+    Now we can fill our tables with some test Data
+
+    ![alt text](image-5.png)
+
+    If we delete Owner2 in Parent table, the related record in child table will be deleted automatically.
+
+
+    ![alt text](image-6.png)
+
+#### Delete Actions Types
+
+    First type and option is CASCADE. For example : If you have one parent table ParentTable and you have one child or related table ChildTable . If you are going to use CASCADE delete action or On delete property then on deletion of records in TABLE ParentTable , related records in TABLE ChildTable will also get deleted. (OurCase)
+
+    Second type and option is RESTRICTED. For example : If you have one parent table ParentTable and you have one child or related table ChildTable. If you are going to use RESTRICTED delete action or On delete property then on deletion of record in TABLE ParentTable , system will not validate records in related Table ChildTable. If related record exits in Table ChildTable then system will not allow you to delete record in Table ParentTable and throw an error.
+
+    Second type and option is CASCADE RESTRICTED. For example : if we have 3 tables i.e. parent table Vehicle & related tables Car & CarManufacturer. Table CarManufacturer is child or related table of Table CAR and similarly Table CAR is child or related table of parent Table Vehicle. If we will set the delete action CASCADE in between Parent Table Vehicle and Related Table CAR and again if we will set the delete action CASCADE RESTRICTED in between Table CAR and Related Table CarManufacturer. Then on deletion of record in Parent TABLE VEHICLE, system will also delete all the related records of TABLE CAR & CarManufacturer. But if you will try to delete records in Car and related records exists in Table CarManufacturer then system will not allow to delete records.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+11. ### Difference between RunBase and RunBaseBatch class.
+
+##### Difference between RunBase and RunBaseBatch class – AX 2012 Or Dynamics 365 F&O
+
+    RunBase: To create a job or an Action class – a program that carries out processes, such as accepting parameters from the user and then updating records in the database – you use the RunBase framework.
+
+    The framework is implemented by the RunBase application class and supplies many features, which include the following:
+
+    · Query
+
+    · dialog, with the persistence of the last values entered by the user
+
+    · Validate
+
+    The RunBase application framework runs or batches an operation.
+
+    An operation is a unit of work, such as the posting of a sales order or calculation of a master schedule.
+
+    The RunBase framework uses the Dialog framework to prompt a user for data input.
+
+    It uses the SysLastValue framework to persist usage data and the Operation Progress framework to show operation progress.
+
+    The RunBase class is a framework for classes that need a dialog for user interaction and that need the dialog values to be saved per user.
+
+    RunBaseBatch: You can design your own batch job by extending the RunBaseBatch class. You can also write code to schedule the batch to run. The batch runs on the Application Object Server (AOS)
+
+    RunBaseBatch is an extension of RunBase – it adds a support for batch processing.
+
+    SysOperation framework is a newer framework replacing RunBase (and its extensions such as RunBaseBatch).
+
+##### Create a Runbase batch class
+
+    Recently got a requirement to create a run base batch for posting inventory journals.So, I created below class.
+
+    Please change the code according to your requirement.
+
+    Step 1 – Copy and paste the below code in a new class
+    Step 2 – Create a new action button and attach the class to it.
+    Step 3 – Add the action button to a module. In my case I added it to the Inventory Management -> Periodic area.
+
+        /// Created this class for posting open inventory journals
+
+        class InventoryJournalsPostings extends RunBaseBatch
+        {
+        QueryRun gQueryRun;
+        #define.CurrentVersion(1)
+
+            /// <summary>
+            /// Construct the class
+            /// </summary>
+            /// <returns>Return the class object</returns>
+            public server static InventoryJournalsPostings construct()
+            {
+                return new InventoryJournalsPostings();
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <returns>Return the class desc</returns>
+            public client server static ClassDescription description()
+            {
+                return "Inventory Journals Posting";
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <returns>Whether the class can be used in a batch task</returns>
+            protected boolean canGoBatchJournal()
+            {
+                return true;
+            }
+
+            /// <summary>
+            /// <returns></returns>
+            public container pack()
+            {
+                container pack = conNull();
+
+                if (gQueryRun)
+                {
+                    pack = gQueryRun.pack();
+                }
+                return [#CurrentVersion] + [pack];
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <param name = "packedClass"></param>
+            /// <returns></returns>
+            public boolean unpack(container _packedClass)
+            {
+                boolean     ret         = false;
+                int         version     = RunBase::getVersion(_packedClass);
+                container   packedQuery = conNull();
+
+                switch (version)
+                {
+                    case #CurrentVersion:
+                        [version, packedQuery] = _packedClass;
+
+                        if (SysQuery::isPackedOk(packedQuery))
+                        {
+                            gQueryRun   = new QueryRun(packedQuery);
+                            ret         = true;
+                        }
+                        break;
+
+                    default:
+                        ret = false;
+                }
+                return ret;
+            }
+
+            /// <summary>
+            /// Allows the class go batch
+            /// </summary>
+            /// <returns>Return the result</returns>
+            public boolean canGoBatch()
+            {
+                return true;
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <returns>Return the true result</returns>
+            public boolean runsImpersonated()
+            {
+                return true;
+            }
+
+            /// <summary>
+            /// Doesn't allows the class run in the new session
+            /// </summary>
+            /// <returns>Return the result</returns>
+            protected boolean canRunInNewSession()
+            {
+                return true;
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <returns></returns>
+            public boolean showQueryValues()
+            {
+                return true;
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <returns></returns>
+            public QueryRun queryRun()
+            {
+                return gQueryRun;
+            }
+
+            /// <summary>
+            /// </summary>
+            public void initQueryRun()
+            {
+                Query                               query = new Query();
+                QueryBuildDataSource                inventJournalTableDS;
+                QueryBuildRange                     inventJournalStatus;
+                QueryBuildRange                     inventJournalStatusRange;
+
+                inventJournalTableDS                      = query.addDataSource(tableNum(InventJournalTable));
+                inventJournalStatus                       = inventJournalTableDS.addRange(fieldNum(InventJournalTable, Posted));
+
+                inventJournalStatus                       = inventJournalTableDS.addRange(fieldNum(InventJournalTable, JournalId));
+
+                gQueryRun = new QueryRun(query);
+                gQueryRun.saveUserSetup(true);
+            }
+
+            /// <summary>
+            /// </summary>
+            /// <param name = "_args">The specified arguments</param>
+            public static void main(Args _args)
+            {
+                InventoryJournalsPostings    InventoryJournalsPostings = InventoryJournalsPostings::construct();
+
+                InventoryJournalsPostings.getLast();
+                InventoryJournalsPostings.caption();
+                InventoryJournalsPostings.initQueryRun();
+
+                if (InventoryJournalsPostings.prompt())
+                {
+                    InventoryJournalsPostings.run();
+                }
+            }
+
+            /// <summary>
+            /// Post open inventory journals
+            /// </summary>
+            public void run()
+            {
+                InventJournalTable              inventJournalTable;
+
+                //Query query = gQueryRun.query();
+
+        while (gQueryRun.next())
+        {
+        inventJournalTable = gQueryRun.get(tableNum(inventJournalTable));
+
+                    if (inventJournalTable.Posted == NoYes::No)
+                    {
+                        JournalCheckPost                journalCheckPost;
+                        journalCheckPost = InventJournalCheckPost::newPostJournal(inventJournalTable);
+                        try
+                        {
+                            ttsbegin;
+                            if(journalCheckPost.validate())
+                            {
+                                journalCheckPost.run();
+                            }
+                            ttscommit;
+                        }
+                        catch
+                    {
+                        info(infolog.text());
+                    }
+                    }
+                }
+            }
+
+        }
+
+**[⬆ Back to Top](#table-of-contents)**
 
 # ===============================================================================================================================================================
 
