@@ -4,22 +4,22 @@
 
 ### Table of Contents
 
-| No. | Questions                                             |
-| --- | ----------------------------------------------------- |
-| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo) |
-| 2   | [What are OOPS concepts?](#what-are-oops-concepts)    |
-| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)      |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
-| 1   | [What is Dynamics 365 F&O?](#)                        |
+| No. | Questions                                                |
+| --- | -------------------------------------------------------- |
+| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)    |
+| 2   | [What are OOPS concepts?](#what-are-oops-concepts)       |
+| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)         |
+| 4   | [What is Dynamics 365 F&O?](#interfaces--abstract-class) |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
+| 1   | [What is Dynamics 365 F&O?](#)                           |
 
 1. ### What is Dynamics 365 F&O?
 
@@ -49,14 +49,13 @@ The Application Object Tree (AOT) is a tree view of all the application objects 
 
    The class implementing is the interface that implements all interface methods and there will not be any abstract Class requirement. There are many access modifiers available like abstract, protected, virtual, internal, public, and many more that are useful in the abstract Classes. Abstract classes will be very fast when compared to interfaces.
 
-   | Interfaces | Abstract Class |
-   | ---------- | -------------- |
-
-   | The interface is the signature for a particular method.| Abstract class contains both the incomplete or complete methods .|
-   | Interface cannot be an implemented method | The abstract class is the implemented method. |
-   | The interfaces does not contain constructors, fields, or destructors but they have only the property’s signature with no implementation.| The abstract class contains constructors, fields, or destructors for implementing the properties. |
-   | Interface supports multiple inheritances. | The abstract class does not support multiple inheritances. |
-   | The class can also inherit more than one interfaces. | The class can inherit only one abstract class. |
+   | Interfaces                                                                                                                               | Abstract Class                                                                                    |
+   | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+   | The interface is the signature for a particular method.                                                                                  | Abstract class contains both the incomplete or complete methods .                                 |
+   | Interface cannot be an implemented method                                                                                                | The abstract class is the implemented method.                                                     |
+   | The interfaces does not contain constructors, fields, or destructors but they have only the property’s signature with no implementation. | The abstract class contains constructors, fields, or destructors for implementing the properties. |
+   | Interface supports multiple inheritances.                                                                                                | The abstract class does not support multiple inheritances.                                        |
+   | The class can also inherit more than one interfaces.                                                                                     | The class can inherit only one abstract class.                                                    |
 
 **[⬆ Back to Top](#table-of-contents)**
 
