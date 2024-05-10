@@ -221,31 +221,31 @@ But in Microsoft Dynamics 365 finance and operations we have 2 options available
 
 1.Create 2 tables, parent table and child table.
 
-    ![alt text](image.png)
+![alt text](image.png)
 
 2.Add fields in Parent table and Child table, In our case: Id is primary key on parent table and ParentId is foreign key in Child tabe.
 
-    ![alt text](image-1.png)
+![alt text](image-1.png)
 
 3.Create a primary key for Parent table, For this create a Index and set Alternative key true and Allow duplicate set to no.
 
-    ![alt text](image-2.png)
+![alt text](image-2.png)
 
 4. Now expand relationship node of child table and right click than add foreign key relation
 
-   ![alt text](image-3.png)
+![alt text](image-3.png)
 
 In the On Delete property we chose Delete Action Type (In our case Cascade)
 
-    ![alt text](image-4.png)
+![alt text](image-4.png)
 
 Now we can fill our tables with some test Data
 
-    ![alt text](image-5.png)
+![alt text](image-5.png)
 
 If we delete Owner2 in Parent table, the related record in child table will be deleted automatically.
 
-    ![alt text](image-6.png)
+![alt text](image-6.png)
 
 #### Delete Actions Types
 
