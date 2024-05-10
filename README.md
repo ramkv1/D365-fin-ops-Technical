@@ -1,18 +1,70 @@
 ### D365F-O-Technical
 
-###### D365FO Interview Questions and Answers
+## D365FO Interview Questions and Answers
 
 ### Table of Contents
 
 | No. | Questions                                             |
 | --- | ----------------------------------------------------- |
 | 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo) |
+| 2   | [What are OOPS concepts?](#what-are-oops-concepts)    |
+| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)      |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
+| 1   | [What is Dynamics 365 F&O?](#)                        |
 
 1. ### What is Dynamics 365 F&O?
 
    Microsoft Dynamics 365 FO is a cloud based ERP (Enterprise Resource Planning) platform developed by Microsoft. Microsoft Dynamics 365 Finance & Operations has replaced the previous on premise version Dynamics AX 2012.
 
    **[⬆ Back to Top](#table-of-contents)**
+
+2. ### What are OOPS concepts?
+
+The main concepts of OOPS used in D365 FO are:
+
+Class and Objects
+Data Abstraction: Showing only the essential information and hide background details.
+Encapsulation: Wrapping of data member and method to a single unit.
+Inheritance:-The Flowing of property of parent class to the child class.
+Polymorphism:-The property of using the same method again and again to perform different things.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+3. ### What is AOT in D365FO?
+
+The Application Object Tree (AOT) is a tree view of all the application objects in Microsoft Dynamics D365FO. The AOT contains every object you need to customize the look and functionality of a Dynamics D365FO application.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+4. ### Interfaces & Abstract Class
+
+   The class implementing is the interface that implements all interface methods and there will not be any abstract Class requirement. There are many access modifiers available like abstract, protected, virtual, internal, public, and many more that are useful in the abstract Classes. Abstract classes will be very fast when compared to interfaces.
+
+   | Interfaces | Abstract Class |
+   | ---------- | -------------- |
+
+   | The interface is the signature for a particular method.| Abstract class contains both the incomplete or complete methods .|
+   | Interface cannot be an implemented method | The abstract class is the implemented method. |
+   | The interfaces does not contain constructors, fields, or destructors but they have only the property’s signature with no implementation.| The abstract class contains constructors, fields, or destructors for implementing the properties. |
+   | Interface supports multiple inheritances. | The abstract class does not support multiple inheritances. |
+   | The class can also inherit more than one interfaces. | The class can inherit only one abstract class. |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# ===============================================================================================================================================================
+
+# ===================================================
+
+# ==========================================================
 
 # Create deployable packages of models
 
