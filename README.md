@@ -4,22 +4,23 @@
 
 ### Table of Contents
 
-| No. | Questions                                                                                                                                          |
-| --- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)                                                                                              |
-| 2   | [What are OOPS concepts?](#what-are-oops-concepts)                                                                                                 |
-| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)                                                                                                   |
-| 4   | [Interfaces & Abstract Class](#interfaces--abstract-class)                                                                                         |
-| 5   | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365)                                                             |
-| 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo)                                 |
-| 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                                                   |
-| 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                                                           |
-| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                                                       |
-| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                                                         |
-| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)                                           |
-| 12  | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365)                                                                             |
-| 13  | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365)                               |
-| 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc) |
+| No. | Questions                                                                                                                                                                |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)                                                                                                                    |
+| 2   | [What are OOPS concepts?](#what-are-oops-concepts)                                                                                                                       |
+| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)                                                                                                                         |
+| 4   | [Interfaces & Abstract Class](#interfaces--abstract-class)                                                                                                               |
+| 5   | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365)                                                                                   |
+| 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo)                                                       |
+| 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                                                                         |
+| 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                                                                                 |
+| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                                                                             |
+| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                                                                               |
+| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)                                                                 |
+| 12  | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365)                                                                                                   |
+| 13  | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365)                                                     |
+| 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc)                       |
+| 15  | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
 
 1. ### What is Dynamics 365 F&O?
 
@@ -210,51 +211,49 @@ To create the EDT, follow these steps:
 
 ##### Deleted Actions/ OnDelete with Example – Microsoft Dynamics 365 F&O
 
-    Delete Actions and OnDelete property indicates how deletions in the main table are handled in the related tables or child tables. There are 3 types of options are available i.e. Cascade, Restricted & CascadeRestricted.
+Delete Actions and OnDelete property indicates how deletions in the main table are handled in the related tables or child tables. There are 3 types of options are available i.e. Cascade, Restricted & CascadeRestricted.
 
-    The delete action and OnDelete property (available only for Microsoft D365 finance and operations) help to maintain database consistency.
+The delete action and OnDelete property (available only for Microsoft D365 finance and operations) help to maintain database consistency.
 
-    Before the release of Microsoft Dynamics 365 for operations , in Microsoft Dynamics AX , there was only one option available i.e Delete Actions.
+Before the release of Microsoft Dynamics 365 for operations , in Microsoft Dynamics AX , there was only one option available i.e Delete Actions.
 
-    But in Microsoft Dynamics 365 finance and operations we have 2 options available. The first one is the traditional approach which was also available in Microsoft Dynamics AX i.e. Delete Actions. The second one is a new approach and recommended in Microsoft Dynamics 365 for finance and operations. This include defining “On Delete” property Below will show some example how to create delete actions using OnDelete properties:
+But in Microsoft Dynamics 365 finance and operations we have 2 options available. The first one is the traditional approach which was also available in Microsoft Dynamics AX i.e. Delete Actions. The second one is a new approach and recommended in Microsoft Dynamics 365 for finance and operations. This include defining “On Delete” property Below will show some example how to create delete actions using OnDelete properties:
 
-    1.Create 2 tables, parent table and child table.
+1.Create 2 tables, parent table and child table.
 
     ![alt text](image.png)
 
-    2.Add fields in Parent table and Child table, In our case: Id is primary key on parent table and ParentId is foreign key in Child tabe.
+2.Add fields in Parent table and Child table, In our case: Id is primary key on parent table and ParentId is foreign key in Child tabe.
 
     ![alt text](image-1.png)
 
-
-    3.Create a primary key for Parent table, For this create a Index and set Alternative key true and Allow duplicate set to no.
+3.Create a primary key for Parent table, For this create a Index and set Alternative key true and Allow duplicate set to no.
 
     ![alt text](image-2.png)
 
-    4. Now expand relationship node of child table and right click than add foreign key relation
+4. Now expand relationship node of child table and right click than add foreign key relation
 
-    ![alt text](image-3.png)
+   ![alt text](image-3.png)
 
-    In the On Delete property we chose Delete Action Type (In our case Cascade)
+In the On Delete property we chose Delete Action Type (In our case Cascade)
 
     ![alt text](image-4.png)
 
-    Now we can fill our tables with some test Data
+Now we can fill our tables with some test Data
 
     ![alt text](image-5.png)
 
-    If we delete Owner2 in Parent table, the related record in child table will be deleted automatically.
-
+If we delete Owner2 in Parent table, the related record in child table will be deleted automatically.
 
     ![alt text](image-6.png)
 
 #### Delete Actions Types
 
-    First type and option is CASCADE. For example : If you have one parent table ParentTable and you have one child or related table ChildTable . If you are going to use CASCADE delete action or On delete property then on deletion of records in TABLE ParentTable , related records in TABLE ChildTable will also get deleted. (OurCase)
+First type and option is CASCADE. For example : If you have one parent table ParentTable and you have one child or related table ChildTable . If you are going to use CASCADE delete action or On delete property then on deletion of records in TABLE ParentTable , related records in TABLE ChildTable will also get deleted. (OurCase)
 
-    Second type and option is RESTRICTED. For example : If you have one parent table ParentTable and you have one child or related table ChildTable. If you are going to use RESTRICTED delete action or On delete property then on deletion of record in TABLE ParentTable , system will not validate records in related Table ChildTable. If related record exits in Table ChildTable then system will not allow you to delete record in Table ParentTable and throw an error.
+Second type and option is RESTRICTED. For example : If you have one parent table ParentTable and you have one child or related table ChildTable. If you are going to use RESTRICTED delete action or On delete property then on deletion of record in TABLE ParentTable , system will not validate records in related Table ChildTable. If related record exits in Table ChildTable then system will not allow you to delete record in Table ParentTable and throw an error.
 
-    Second type and option is CASCADE RESTRICTED. For example : if we have 3 tables i.e. parent table Vehicle & related tables Car & CarManufacturer. Table CarManufacturer is child or related table of Table CAR and similarly Table CAR is child or related table of parent Table Vehicle. If we will set the delete action CASCADE in between Parent Table Vehicle and Related Table CAR and again if we will set the delete action CASCADE RESTRICTED in between Table CAR and Related Table CarManufacturer. Then on deletion of record in Parent TABLE VEHICLE, system will also delete all the related records of TABLE CAR & CarManufacturer. But if you will try to delete records in Car and related records exists in Table CarManufacturer then system will not allow to delete records.
+Second type and option is CASCADE RESTRICTED. For example : if we have 3 tables i.e. parent table Vehicle & related tables Car & CarManufacturer. Table CarManufacturer is child or related table of Table CAR and similarly Table CAR is child or related table of parent Table Vehicle. If we will set the delete action CASCADE in between Parent Table Vehicle and Related Table CAR and again if we will set the delete action CASCADE RESTRICTED in between Table CAR and Related Table CarManufacturer. Then on deletion of record in Parent TABLE VEHICLE, system will also delete all the related records of TABLE CAR & CarManufacturer. But if you will try to delete records in Car and related records exists in Table CarManufacturer then system will not allow to delete records.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -571,6 +570,32 @@ To wrap up, let’s review some of the requirements and considerations while wri
 1. As with any other CoC method, these ones need to call always next to invoke the next in the chain, so it can go all the way to the kernel / native implementation in the runtime behavior. This is equivalent to calling super( ) from the form itself to guarantee the base behavior in the runtime is always executed as expected.
 2. It is NOT possible to add CoC to wrap methods that are not defined in the original base behavior of the nested control type. However, it is possible from the control extension to make a call into this method if it has been defined as public or protected.
 3. It is NOT needed to recompile the module where the original form is defined to have support for CoC methods on nested concepts on that form from an extension.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+15. ### What is the Sysoperation framework how it is different from the runbase framework?
+
+In Microsoft Dynamics AX 2012 & D365FO, the SysOperation system supplanted the RunBase system to bolster the group preparing usefulness. Going forward, the SysOperation system is prescribed for composing custom trade rationale that requires clump handling usefulness, over the censured RunBase framework. The RunBase system characterizes coding designs that actualize these necessities. The SysOperation system gives base executions for numerous of the designs characterized by the RunBase system. Another incredible thing is SysOperation system streamlined the pack / unload of factors that were extra work within the RunBase system, taking advantage of the Traits highlight presented with AX 2012 & D365FO.
+
+SysOperation framework allows application logic to be written in a way that supports running operations interactively or via the Microsoft Dynamics AX & D365FO batch server. It implements the MVC (Model–View–Controller) design pattern, with the isolation of Parameters (Model), Dialog (View), and Service (Controller), for the code that’s executed.
+
+The key objects of the framework are defined below:
+
+###### Service:
+
+The service class extends from the SysOperationServiceBase class and contains the business logic for the batch operation. Developers often tend to add the business logic in controller classes, which violates the Single responsibility principle.
+
+###### Data Contract:
+
+Data contract class is the model class defining attributes needed for batch operations. These attributes are provided by the user, in a dialog. DataContractAttribute attribute is needed for the class and the properties methods require the DataMemberAttribute attribute.
+
+###### Controller:
+
+Controller class extends from the SysOperationServiceController class. It holds information about the batch operation like execution mode, show dialog or progress bar etc. and directs the batch operation.
+
+###### UI Builder:
+
+UI Builder class extends from SysOperationAutomaticUIBuilder class and is used for adding custom behavior to dialog/dialog fields dynamically constructed by the SysOperation framework.
 
 **[⬆ Back to Top](#table-of-contents)**
 
