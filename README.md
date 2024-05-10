@@ -262,41 +262,41 @@ To create the EDT, follow these steps:
 
 ##### Difference between RunBase and RunBaseBatch class – AX 2012 Or Dynamics 365 F&O
 
-    RunBase: To create a job or an Action class – a program that carries out processes, such as accepting parameters from the user and then updating records in the database – you use the RunBase framework.
+RunBase: To create a job or an Action class – a program that carries out processes, such as accepting parameters from the user and then updating records in the database – you use the RunBase framework.
 
-    The framework is implemented by the RunBase application class and supplies many features, which include the following:
+The framework is implemented by the RunBase application class and supplies many features, which include the following:
 
-    · Query
+· Query
 
-    · dialog, with the persistence of the last values entered by the user
+· dialog, with the persistence of the last values entered by the user
 
-    · Validate
+· Validate
 
-    The RunBase application framework runs or batches an operation.
+The RunBase application framework runs or batches an operation.
 
-    An operation is a unit of work, such as the posting of a sales order or calculation of a master schedule.
+An operation is a unit of work, such as the posting of a sales order or calculation of a master schedule.
 
-    The RunBase framework uses the Dialog framework to prompt a user for data input.
+The RunBase framework uses the Dialog framework to prompt a user for data input.
 
-    It uses the SysLastValue framework to persist usage data and the Operation Progress framework to show operation progress.
+It uses the SysLastValue framework to persist usage data and the Operation Progress framework to show operation progress.
 
-    The RunBase class is a framework for classes that need a dialog for user interaction and that need the dialog values to be saved per user.
+The RunBase class is a framework for classes that need a dialog for user interaction and that need the dialog values to be saved per user.
 
-    RunBaseBatch: You can design your own batch job by extending the RunBaseBatch class. You can also write code to schedule the batch to run. The batch runs on the Application Object Server (AOS)
+RunBaseBatch: You can design your own batch job by extending the RunBaseBatch class. You can also write code to schedule the batch to run. The batch runs on the Application Object Server (AOS)
 
-    RunBaseBatch is an extension of RunBase – it adds a support for batch processing.
+RunBaseBatch is an extension of RunBase – it adds a support for batch processing.
 
-    SysOperation framework is a newer framework replacing RunBase (and its extensions such as RunBaseBatch).
+SysOperation framework is a newer framework replacing RunBase (and its extensions such as RunBaseBatch).
 
 ##### Create a Runbase batch class
 
-    Recently got a requirement to create a run base batch for posting inventory journals.So, I created below class.
+Recently got a requirement to create a run base batch for posting inventory journals.So, I created below class.
 
-    Please change the code according to your requirement.
+Please change the code according to your requirement.
 
-    Step 1 – Copy and paste the below code in a new class
-    Step 2 – Create a new action button and attach the class to it.
-    Step 3 – Add the action button to a module. In my case I added it to the Inventory Management -> Periodic area.
+Step 1 – Copy and paste the below code in a new class
+Step 2 – Create a new action button and attach the class to it.
+Step 3 – Add the action button to a module. In my case I added it to the Inventory Management -> Periodic area.
 
         /// Created this class for posting open inventory journals
 
