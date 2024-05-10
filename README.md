@@ -1,6 +1,21 @@
 ### D365F-O-Technical
 
+###### D365FO Interview Questions and Answers
+
+### Table of Contents
+
+| No. | Questions                                             |
+| --- | ----------------------------------------------------- |
+| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo) |
+
+1. ### What is Dynamics 365 F&O?
+
+   Microsoft Dynamics 365 FO is a cloud based ERP (Enterprise Resource Planning) platform developed by Microsoft. Microsoft Dynamics 365 Finance & Operations has replaced the previous on premise version Dynamics AX 2012.
+
+   **[⬆ Back to Top](#table-of-contents)**
+
 # Create deployable packages of models
+
 https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package
 
 # MorphX and Intellimorph
@@ -206,3 +221,5 @@ need to run job for number sequence
 5. functional setups,
 
 6.nedd to write logic in table initvalue()
+
+###### D365FO Interview Questions and Answers
