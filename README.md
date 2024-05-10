@@ -15,7 +15,7 @@
 | 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                   |
 | 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                           |
 | 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                       |
-| 10  | [What is Dynamics 365 F&O?](#)                                                                                     |
+| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                         |
 | 11  | [What is Dynamics 365 F&O?](#)                                                                                     |
 | 12  | [What is Dynamics 365 F&O?](#)                                                                                     |
 | 13  | [What is Dynamics 365 F&O?](#)                                                                                     |
@@ -149,21 +149,21 @@
 
 #### What is an Extended Data Type?
 
-    Extended Data Types are commonly mentioned as EDTs. They extend base types, such as
-    Strings, and Integers, by adding properties that affect the looks, behavior, data
-    (size), and table reference/relationships. This means we can have types like Customer
-    account that has a label, size, table relation information, and other properties that provide
-    consistency and greater understanding within the data model.
-    Another example of an EDT is Name. Should we change the StringSize property of this
-    field, all fields extends this EDT are going to be adjusted; and if we reduce string size, it’ll truncate
-    the values to the new size.
-    All fields should extend an EDT or an Enum.
+Extended Data Types are commonly mentioned as EDTs. They extend base types, such as
+Strings, and Integers, by adding properties that affect the looks, behavior, data
+(size), and table reference/relationships. This means we can have types like Customer
+account that has a label, size, table relation information, and other properties that provide
+consistency and greater understanding within the data model.
+Another example of an EDT is Name. Should we change the StringSize property of this
+field, all fields extends this EDT are going to be adjusted; and if we reduce string size, it’ll truncate
+the values to the new size.
+All fields should extend an EDT or an Enum.
 
 ##### How to create Extended Data Type?
 
-    We will create an EDT for the Vehicle number. A vehicle table is a similar pattern to
-    customers, and vendors, and we will extend the AccountNum Extended Data Type.
-    To create the EDT, follow these steps:
+We will create an EDT for the Vehicle number. A vehicle table is a similar pattern to
+customers, and vendors, and we will extend the AccountNum Extended Data Type.
+To create the EDT, follow these steps:
 
 1. EDT is created like all new AX artifacts, by pressing
    Control+Shift+A or right-clicking on a folder in the solution explorer and choose Add | New Item.
