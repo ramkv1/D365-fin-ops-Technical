@@ -32,11 +32,11 @@
 
    The main concepts of OOPS used in D365 FO are:
 
-   . Class and Objects
-   . Data Abstraction: Showing only the essential information and hide background details.
-   . Encapsulation: Wrapping of data member and method to a single unit.
-   . Inheritance:-The Flowing of property of parent class to the child class.
-   . Polymorphism:-The property of using the same method again and again to perform different things.
+   1. Class and Objects
+   2. Data Abstraction: Showing only the essential information and hide background details.
+   3. Encapsulation: Wrapping of data member and method to a single unit.
+   4. Inheritance:-The Flowing of property of parent class to the child class.
+   5. Polymorphism:-The property of using the same method again and again to perform different things.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -69,9 +69,9 @@
 
    There are 3 types of tables used in D365 FO :
 
-   . Regular
-   . Temp DB
-   . In Memory
+   1. Regular
+   2. Temp DB
+   3. In Memory
 
 **[⬆ Back to Top](#table-of-contents)**
 
