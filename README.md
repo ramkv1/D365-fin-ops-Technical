@@ -79,12 +79,12 @@
 
     There are two types of temporary tables in Dynamics 365 F&O, TempDB tables, and InMemory tables. The differences between them are described in the following grid:
 
-    | InMemory tables                                        | TempDB tables                                                      |
-    | ------------------------------------------------------ | ------------------------------------------------------------------ |
-    | 1. Holds data temporarily in the client or server tier | 1. Holds data temporarily in the database until the scope is valid |
-    | 2. These tables can’t be stored in Database            | 2. These tables are stored in the database                         |
-    | 3. Can’t apply security                                | 3. Can apply security                                              |
-    | 4. We cannot use InMemory table buffers                | 4. TempDB table buffer can be used in coding                       |
+    | sNo | InMemory tables                                     | TempDB tables                                                   |
+    | --- | --------------------------------------------------- | --------------------------------------------------------------- |
+    | 1   | Holds data temporarily in the client or server tier | Holds data temporarily in the database until the scope is valid |
+    | 2   | These tables can’t be stored in Database            | These tables are stored in the database                         |
+    | 3   | Can’t apply security                                | Can apply security                                              |
+    | 4   | We cannot use InMemory table buffers                | TempDB table buffer can be used in coding                       |
 
     ### TempDB tables
 
