@@ -22,6 +22,8 @@
 | 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc)                       |
 | 15  | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
 
+| 16 | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service) |
+
 1. ### What is Dynamics 365 F&O?
 
    Microsoft Dynamics 365 FO is a cloud based ERP (Enterprise Resource Planning) platform developed by Microsoft. Microsoft Dynamics 365 Finance & Operations has replaced the previous on premise version Dynamics AX 2012.
@@ -596,6 +598,12 @@ Controller class extends from the SysOperationServiceController class. It holds 
 ###### UI Builder:
 
 UI Builder class extends from SysOperationAutomaticUIBuilder class and is used for adding custom behavior to dialog/dialog fields dynamically constructed by the SysOperation framework.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+16. ### what is LCS (Lifecycle service)?
+
+Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of finance and operations apps.
 
 **[⬆ Back to Top](#table-of-contents)**
 
