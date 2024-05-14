@@ -22,7 +22,7 @@
 | 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc)                       |
 | 15  | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
 
-| 15 | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service) |
+| 16 | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service) |
 
 1. ### What is Dynamics 365 F&O?
 
