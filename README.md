@@ -688,7 +688,7 @@ Is this the best/recommended approach that Microsoft offers to integrate large s
 
 https://www.youtube.com/watch?v=m3Rc92c906I
 
-![alt text](AApiM.png)
+![alt text](images/AApiM.png)
 
 ==> Use Odata Custom Service,Virtual Entities
 
