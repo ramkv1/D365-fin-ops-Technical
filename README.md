@@ -1,5 +1,9 @@
 ### D365F-O-Technical
 
+![alt text](images/AxArchitexture.png.png)
+
+https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/system-architecture
+
 ## D365FO Interview Questions and Answers
 
 ### Table of Contents
