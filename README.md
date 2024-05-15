@@ -1,6 +1,6 @@
 ### D365F-O-Technical
 
-![alt text](images/AxArchitexture.png.png)
+![alt text](images/AxArchitexture.png)
 
 https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/system-architecture
 
