@@ -26,6 +26,7 @@ https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/system-architect
 | 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc)                       |
 | 15  | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
 | 16  | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service)                                                                                                         |
+| 16  | [X++?](#X)                                                                                                                                                               |
 
 1. ### What is Dynamics 365 F&O?
 
@@ -607,6 +608,12 @@ UI Builder class extends from SysOperationAutomaticUIBuilder class and is used f
 16. ### what is LCS (Lifecycle service)?
 
 Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations of finance and operations apps.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+17. ### X++?
+
+X++ is indeed a compiled language. In the context of Microsoft Dynamics AX (now Dynamics 365 Finance and Operations), X++ code is compiled into Intermediate Language (IL) code, which is then executed by the Common Language Runtime (CLR) within the Dynamics AX runtime environment. The X++ compiler translates the human-readable X++ code into a format that can be understood and executed by the underlying runtime environment. This compilation process helps ensure efficiency and performance when running Dynamics AX applications.
 
 **[⬆ Back to Top](#table-of-contents)**
 
