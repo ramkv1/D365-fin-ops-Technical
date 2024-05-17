@@ -12,28 +12,26 @@ https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/aos-architecture
 
 ### Table of Contents
 
-| No. | Questions |
-| --- | --------- |
-
-| 0 | [Projects in resume?](#projects-in-resume) |
-
-| 1 | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo) |
-| 2 | [What are OOPS concepts?](#what-are-oops-concepts) |
-| 3 | [What is AOT in D365FO?](#what-is-aot-in-d365fo) |
-| 4 | [Interfaces & Abstract Class](#interfaces--abstract-class) |
-| 5 | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365) |
-| 6 | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo) |
-| 7 | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables) |
-| 8 | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum) |
-| 9 | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo) |
-| 10 | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo) |
-| 11 | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class) |
-| 12 | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365) |
-| 13 | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365) |
-| 14 | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc) |
-| 15 | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
-| 16 | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service) |
-| 16 | [X++?](#X) |
+| No. | Questions                                                                                                                                                                |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0   | [Projects in resume?](#projects-in-resume)                                                                                                                               |
+| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)                                                                                                                    |
+| 2   | [What are OOPS concepts?](#what-are-oops-concepts)                                                                                                                       |
+| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)                                                                                                                         |
+| 4   | [Interfaces & Abstract Class](#interfaces--abstract-class)                                                                                                               |
+| 5   | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365)                                                                                   |
+| 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo)                                                       |
+| 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                                                                         |
+| 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                                                                                 |
+| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                                                                             |
+| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                                                                               |
+| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)                                                                 |
+| 12  | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365)                                                                                                   |
+| 13  | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365)                                                     |
+| 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc)                       |
+| 15  | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
+| 16  | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service)                                                                                                         |
+| 16  | [X++?](#X)                                                                                                                                                               |
 
 1. ### What is Dynamics 365 F&O?
 
