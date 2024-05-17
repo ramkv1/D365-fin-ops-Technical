@@ -12,25 +12,28 @@ https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/aos-architecture
 
 ### Table of Contents
 
-| No. | Questions                                                                                                                                                                |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo)                                                                                                                    |
-| 2   | [What are OOPS concepts?](#what-are-oops-concepts)                                                                                                                       |
-| 3   | [What is AOT in D365FO?](#what-is-aot-in-d365fo)                                                                                                                         |
-| 4   | [Interfaces & Abstract Class](#interfaces--abstract-class)                                                                                                               |
-| 5   | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365)                                                                                   |
-| 6   | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo)                                                       |
-| 7   | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables)                                                                         |
-| 8   | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum)                                                                                                                 |
-| 9   | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo)                                                                                                             |
-| 10  | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo)                                                                                               |
-| 11  | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class)                                                                 |
-| 12  | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365)                                                                                                   |
-| 13  | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365)                                                     |
-| 14  | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc)                       |
-| 15  | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
-| 16  | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service)                                                                                                         |
-| 16  | [X++?](#X)                                                                                                                                                               |
+| No. | Questions |
+| --- | --------- |
+
+| 0 | [Projects in resume?](#projects-in-resume) |
+
+| 1 | [What is Dynamics 365 F&O?](#what-is-dynamics-365-fo) |
+| 2 | [What are OOPS concepts?](#what-are-oops-concepts) |
+| 3 | [What is AOT in D365FO?](#what-is-aot-in-d365fo) |
+| 4 | [Interfaces & Abstract Class](#interfaces--abstract-class) |
+| 5 | [What is the concept of extension in D365?](#what-is-the-concept-of-extension-in-d365) |
+| 6 | [what-are-the-different-types-of-tables-used-in-d365-fo?](#what-are-the-different-types-of-tables-used-in-d365-fo) |
+| 7 | [Difference Between TempDB and InMemory Tables?](#difference-between-tempdb-and-inmemory-tables) |
+| 8 | [what-is-edt-and-base-enum?](#what-is-edt-and-base-enum) |
+| 9 | [what-is-an-index-in-d365-fo?](#what-is-an-index-in-d365-fo) |
+| 10 | [What are Delete Actions in D365 FO?](#what-are-delete-actions-in-d365-fo) |
+| 11 | [difference-between-runbase-and-runbasebatch-class?](#difference-between-runbase-and-runbasebatch-class) |
+| 12 | [what-are-table-relations-in-d365?](#what-are-table-relations-in-d365) |
+| 13 | [what-are-different-type-of-menu-items-available-in-d365?](#what-are-different-type-of-menu-items-available-in-d365) |
+| 14 | [dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc?](#dynamics-365-finance--operations--how-to-use-chain-of-command-in-x-coc) |
+| 15 | [what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework?](#what-is-the-sysoperation-framework-how-it-is-different-from-the-runbase-framework) |
+| 16 | [what-is-lcs-lifecycle-service?](#what-is-lcs-lifecycle-service) |
+| 16 | [X++?](#X) |
 
 1. ### What is Dynamics 365 F&O?
 
@@ -836,3 +839,34 @@ need to run job for number sequence
 6.nedd to write logic in table initvalue()
 
 ###### D365FO Interview Questions and Answers
+
+0. ### Projects in resume
+
+2) PIPL (Pacific International Pvt Ltd based in India)
+
+Pacific International Pvt Ltd based in India, providing industrial solutions and services to Iron & Steel Plants and Aluminium Plants. We have established ourselves as a reliable and trustworthy partner. Our success is contributed to our rich portfolio of Industrial Products and a professional team of engineers.
+
+Pacific International Pvt Ltd was founded in 1996, nearly twenty three four years of history, running parallel to the industrial development in India.
+
+With a dedicated team of Mechanical and Metallurgical Engineers of more than 30 professionals, we add value and reduce cost per ton of production for our customers.
+
+We sell and do after sales services for equipments of
+Steel Melting Shop - Slab caster, Billet Caster, Bloom Caster, CSP Caster
+Hot Strip Mill
+Plate Mill
+Cold Rolling Mill
+Long products Mill
+Blast Furnace
+
+Some of our products are
+Debricking and Deslagging Machine
+Complete Mould and segments
+Segment Rolls
+Copper Panels for Electric Arc Furnaces
+Skid Buttons / Riders
+Furnace Rolls
+Descaling Systems and Services
+Descaling pump and Valve and its service
+Cast Work Rolls for Hot Strip Mill
+
+**[⬆ Back to Top](#table-of-contents)**
