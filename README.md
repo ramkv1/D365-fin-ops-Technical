@@ -840,6 +840,9 @@ need to run job for number sequence
 
 0. ### Projects in resume
 
+1) CIC (The Co-operative Insurance Company of Kenya Limited (CIC Insurance)) formerly known as Co-operative Insurance Services Limited
+   kenya,uganda,South Sudan,Malawi
+
 2) PIPL (Pacific International Pvt Ltd based in India)
 
 Pacific International Pvt Ltd based in India, providing industrial solutions and services to Iron & Steel Plants and Aluminium Plants. We have established ourselves as a reliable and trustworthy partner. Our success is contributed to our rich portfolio of Industrial Products and a professional team of engineers.
