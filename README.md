@@ -4,6 +4,10 @@
 
 https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/system-architecture
 
+![alt text](images/AOS%20architecture.png)
+
+https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/aos-architecture
+
 ## D365FO Interview Questions and Answers
 
 ### Table of Contents
