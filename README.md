@@ -845,7 +845,22 @@ need to run job for number sequence
 1) CIC (The Co-operative Insurance Company of Kenya Limited (CIC Insurance)) formerly known as Co-operative Insurance Services Limited
    kenya,uganda,South Sudan,Malawi
 
-2) PIPL (Pacific International Pvt Ltd based in India)
+Individual
+Easy bima
+Motor Commercial
+Home Insurance
+senior Mediplan
+personal Accident
+
+Business
+motor commercial
+motor private
+Fire Insurance
+theft
+corporates
+Cooperative
+
+2. PIPL (Pacific International Pvt Ltd based in India)
 
 Pacific International Pvt Ltd based in India, providing industrial solutions and services to Iron & Steel Plants and Aluminium Plants. We have established ourselves as a reliable and trustworthy partner. Our success is contributed to our rich portfolio of Industrial Products and a professional team of engineers.
 
@@ -872,11 +887,26 @@ Descaling Systems and Services
 Descaling pump and Valve and its service
 Cast Work Rolls for Hot Strip Mill
 
+        Raw Material
+        Blast Furnace
+        Steel Metling Shop
+        Hot Strip mill and csp mills
+        plate mill
+        cold rolling mill
+        Long product mill
+
 3. Invitro Technologies
 
 In Vitro Technologies is a Scientific and Medical distribution company specialising in the sale and support of scientific, clinical diagnostic, medical and related products. The company was established in 2002
 
 In Vitro Technologies consists of four major Business Units, providing our customers with the highest quality products and services in the areas of Industrial Science, Life Science, Women’s and Children’s and Infection Control.
+
+Life science
+Industrial science
+women's & children's
+Infection controll
+Technical service
+customer Care
 
 **[⬆ Back to Top](#table-of-contents)**
 
