@@ -842,7 +842,7 @@ need to run job for number sequence
 
 7. ### Projects in resume
 
-1) CIC (The Co-operative Insurance Company of Kenya Limited (CIC Insurance)) formerly known as Co-operative Insurance Services Limited
+1) ##### CIC (The Co-operative Insurance Company of Kenya Limited (CIC Insurance)) formerly known as Co-operative Insurance Services Limited
    kenya,uganda,South Sudan,Malawi
 
 1. Individual
@@ -861,7 +861,7 @@ need to run job for number sequence
 3. corporates
 4. Cooperative
 
-5. PIPL (Pacific International Pvt Ltd based in India)
+5. ##### PIPL (Pacific International Pvt Ltd based in India)
 
 Pacific International Pvt Ltd based in India, providing industrial solutions and services to Iron & Steel Plants and Aluminium Plants. We have established ourselves as a reliable and trustworthy partner. Our success is contributed to our rich portfolio of Industrial Products and a professional team of engineers.
 
@@ -896,7 +896,7 @@ Cast Work Rolls for Hot Strip Mill
         cold rolling mill
         Long product mill
 
-3. Invitro Technologies
+3. ##### Invitro Technologies
 
 In Vitro Technologies is a Scientific and Medical distribution company specialising in the sale and support of scientific, clinical diagnostic, medical and related products. The company was established in 2002
 
