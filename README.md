@@ -883,12 +883,12 @@ In Vitro Technologies consists of four major Business Units, providing our custo
 17. ### Report Generation in D365 F&o
 
 1. A new SSRS report with a single (Precision) design.
-1. A DP (Data Provider) class that will provide three data sets for the SSRS report. The same class will also provide the information about report parameters to the report’s RDL through an attribute that links a DP class with the corresponding report Data Contract.
-1. A Data Contract class that will define and carry the values of the report parameters. We will have one hidden parameter: a sales agreement’s RecId.
-1. Three temporary tables to define and carry the report data. They will be filled and exposed to the SSRS report by the DP class.
-1. A Controller class that will handle the report dialog form, setting the SSRS report design and the value of the hidden parameter.
-1. A menu item that opens the report in the viewer.
-1. A menu item that opens the report dialog form.
-1. Security artifacts for these two menu items.
+   1. A DP (Data Provider) class that will provide three data sets for the SSRS report. The same class will also provide the information about report parameters to the report’s RDL through an attribute that links a DP class with the corresponding report Data Contract.
+   2. A Data Contract class that will define and carry the values of the report parameters. We will have one hidden parameter: a sales agreement’s RecId.
+   3. Three temporary tables to define and carry the report data. They will be filled and exposed to the SSRS report by the DP class.
+   4. A Controller class that will handle the report dialog form, setting the SSRS report design and the value of the hidden parameter.
+   5. A menu item that opens the report in the viewer.
+   6. A menu item that opens the report dialog form.
+   7. Security artifacts for these two menu items.
 
 **[⬆ Back to Top](#table-of-contents)**
