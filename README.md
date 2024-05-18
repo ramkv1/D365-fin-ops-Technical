@@ -608,6 +608,10 @@ Controller class extends from the SysOperationServiceController class. It holds 
 
 UI Builder class extends from SysOperationAutomaticUIBuilder class and is used for adding custom behavior to dialog/dialog fields dynamically constructed by the SysOperation framework.
 
+https://medium.com/@sakthivelssvj/sysoperation-framework-in-d365-da68a57955af#:~:text=in%20the%20background.-,The%20SysOperation%20Framework%20can%20help%20you%20create%20batch%20jobs%20that,users%20when%20they%20need%20them.
+
+![alt text](images/Sysoperation_Classes_used_for_Reports.png)
+
 **[⬆ Back to Top](#table-of-contents)**
 
 16. ### what is LCS (Lifecycle service)?
@@ -834,11 +838,9 @@ need to run job for number sequence
 
 5. functional setups,
 
-6.nedd to write logic in table initvalue()
+6. need to write logic in table initvalue()
 
-###### D365FO Interview Questions and Answers
-
-0. ### Projects in resume
+7. ### Projects in resume
 
 1) CIC (The Co-operative Insurance Company of Kenya Limited (CIC Insurance)) formerly known as Co-operative Insurance Services Limited
    kenya,uganda,South Sudan,Malawi
@@ -869,5 +871,24 @@ Furnace Rolls
 Descaling Systems and Services
 Descaling pump and Valve and its service
 Cast Work Rolls for Hot Strip Mill
+
+3. Invitro Technologies
+
+In Vitro Technologies is a Scientific and Medical distribution company specialising in the sale and support of scientific, clinical diagnostic, medical and related products. The company was established in 2002
+
+In Vitro Technologies consists of four major Business Units, providing our customers with the highest quality products and services in the areas of Industrial Science, Life Science, Women’s and Children’s and Infection Control.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+17. ### Report Generation in D365 F&o
+
+1. A new SSRS report with a single (Precision) design.
+1. A DP (Data Provider) class that will provide three data sets for the SSRS report. The same class will also provide the information about report parameters to the report’s RDL through an attribute that links a DP class with the corresponding report Data Contract.
+1. A Data Contract class that will define and carry the values of the report parameters. We will have one hidden parameter: a sales agreement’s RecId.
+1. Three temporary tables to define and carry the report data. They will be filled and exposed to the SSRS report by the DP class.
+1. A Controller class that will handle the report dialog form, setting the SSRS report design and the value of the hidden parameter.
+1. A menu item that opens the report in the viewer.
+1. A menu item that opens the report dialog form.
+1. Security artifacts for these two menu items.
 
 **[⬆ Back to Top](#table-of-contents)**
