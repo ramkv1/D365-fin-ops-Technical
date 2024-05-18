@@ -846,17 +846,17 @@ need to run job for number sequence
    kenya,uganda,South Sudan,Malawi
 
 1. Individual
-   Easy bima
-   Motor Commercial
-   Home Insurance
-   senior Mediplan
-   personal Accident
+   . Easy bima
+   . Motor Commercial
+   . Home Insurance
+   . senior Mediplan
+   . personal Accident
 
 2. Business
-   motor commercial
-   motor private
-   Fire Insurance
-   theft
+   . motor commercial
+   . motor private
+   . Fire Insurance
+   . theft
 3. corporates
 4. Cooperative
 
