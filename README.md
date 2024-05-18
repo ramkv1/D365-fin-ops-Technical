@@ -845,22 +845,22 @@ need to run job for number sequence
 1) CIC (The Co-operative Insurance Company of Kenya Limited (CIC Insurance)) formerly known as Co-operative Insurance Services Limited
    kenya,uganda,South Sudan,Malawi
 
-Individual
-Easy bima
-Motor Commercial
-Home Insurance
-senior Mediplan
-personal Accident
+1. Individual
+   Easy bima
+   Motor Commercial
+   Home Insurance
+   senior Mediplan
+   personal Accident
 
-Business
-motor commercial
-motor private
-Fire Insurance
-theft
-corporates
-Cooperative
+2. Business
+   motor commercial
+   motor private
+   Fire Insurance
+   theft
+3. corporates
+4. Cooperative
 
-2. PIPL (Pacific International Pvt Ltd based in India)
+5. PIPL (Pacific International Pvt Ltd based in India)
 
 Pacific International Pvt Ltd based in India, providing industrial solutions and services to Iron & Steel Plants and Aluminium Plants. We have established ourselves as a reliable and trustworthy partner. Our success is contributed to our rich portfolio of Industrial Products and a professional team of engineers.
 
@@ -901,12 +901,12 @@ In Vitro Technologies is a Scientific and Medical distribution company specialis
 
 In Vitro Technologies consists of four major Business Units, providing our customers with the highest quality products and services in the areas of Industrial Science, Life Science, Women’s and Children’s and Infection Control.
 
-Life science
-Industrial science
-women's & children's
-Infection controll
-Technical service
-customer Care
+        Life science
+        Industrial science
+        women's & children's
+        Infection controll
+        Technical service
+        customer Care
 
 **[⬆ Back to Top](#table-of-contents)**
 
