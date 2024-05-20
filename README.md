@@ -920,3 +920,47 @@ A new SSRS report with a single (Precision) design.
 7.  Security artifacts for these two menu items.
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### Tables in inventory?
+
+InvetTable,InventTableModule,InventItemLocation, InventDim, InventTrans
+BOMTable , WMSShipment.InventColor, InventSize
+
+### What are the link types in Ax?
+
+Passive: Linked child data sources are not updated automatically. Updates of the child data source must be programmed on the active method of the master data source.
+
+Delayed: A pause is inserted before linked child data sources are updated. This enables faster navigation in the parent data source because the records from child data sources are not updated immediately. For example, the user could be scrolling past several orders without immediately seeing each order lines.
+
+Active: The child data source is updated immediately when a new record in the parent data source is selected. Continuous updates consume lots of resources.
+
+InnerJoin: Selects records from the main table that have matching records in the joined table and vice versa. There is one record for each match. Records without related records in the other data source are eliminated from the result.
+
+OuterJoin: Selects records from the main table whether they have matching records in the joined table.
+And the other records also shown in the main table.
+
+ExistJoin: Selects a record from the main table for each matching record in the joined table.
+The differences between InnerJoin and ExistJoin are as follows:
+
+-                      When the join type is ExistJoin, the search ends after the first match has been found.
+-                      When the join type is InnerJoin, all matching records are searched for.
+
+NotExistJoin: Select records from the main table that do not have a match in the joined table.
+
+### What are the classes, Tables, Forms and Methods used to post the sales orders.
+
+SalesTableType and SaleslineType classes will get called while creating the orders.
+SalesFormLetter* classes will be used to post the sales order at various document status(packing, invoice etc).
+SalesParm* tables are used to prepare the data for posting
+CustConfirmJour, CustConfirmTrans - when a sales order gets confirmed
+CustPackingSlipJour, CustPackingSlipTrans - when a packing slip is posted.
+CustInvoiceTable,CustInvoiceTrans - when an invoice is posted.
+These are some of the maily used tables.
+
+83. ### What are the classes, Tables, Forms and Methods used to post the purchase orders.
+84. ### What are the classes, Tables, Forms and Methods used to post the Ledgers.
+85. ### what are the classes, Tables, Forms and Methods used to post the Inventory.
+86. ### What is the base class to send the on-boad E-mailing.
+    SysMailer and SysINetMail.
+
+In the cloud computing environment, the sandbox environment is a segregated environment that permits the software developers to carry out the testing and deploying of new applications and services without making any disturbances or changes to the production environment.
