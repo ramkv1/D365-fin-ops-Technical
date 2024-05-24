@@ -969,16 +969,16 @@ In the cloud computing environment, the sandbox environment is a segregated envi
 
                 [Control("String")]
 
-class AccountNumber{
-public void lookup(){
-Query query;
-QueryRun queryrun;
-SystableLookup systableLookup;
-FormStringControl \_formcontrol;
-QueryBuildDataSource qbds;
-QueryBuildRange qbdr;
+                class AccountNumber{
+                public void lookup(){
+                Query query;
+                QueryRun queryrun;
+                SystableLookup systableLookup;
+                FormStringControl _formcontrol;
+                QueryBuildDataSource qbds;
+                QueryBuildRange qbdr;
 
-    	super();
+    	        super();
 
     	systableLookup = SystableLookup :: newParameters(tableNum(CustTable),this);
     	systableLookup.addLookupfield(fieldNum(CustTable,AccountNum));
