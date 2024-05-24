@@ -964,3 +964,32 @@ These are some of the maily used tables.
     SysMailer and SysINetMail.
 
 In the cloud computing environment, the sandbox environment is a segregated environment that permits the software developers to carry out the testing and deploying of new applications and services without making any disturbances or changes to the production environment.
+
+### Lookup dynamicQuery
+
+                [Control("String")]
+
+class AccountNumber{
+public void lookup(){
+Query query;
+QueryRun queryrun;
+SystableLookup systableLookup;
+FormStringControl \_formcontrol;
+QueryBuildDataSource qbds;
+QueryBuildRange qbdr;
+
+    	super();
+
+    	systableLookup = SystableLookup :: newParameters(tableNum(CustTable),this);
+    	systableLookup.addLookupfield(fieldNum(CustTable,AccountNum));
+
+    	query=new Query();
+    	qbds=query.addDataSource(tableNum(CustTable));
+    	qbdr=qbds.addRange(fieldNum(CustTable,AccountNum));
+    	qbdr.value(queryRange('US-001','US-020'));
+    	systablelookup.parmQuery(query);
+
+    	systablelookup.performFormLookup();
+    }
+
+}
