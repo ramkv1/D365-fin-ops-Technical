@@ -993,3 +993,11 @@ In the cloud computing environment, the sandbox environment is a segregated envi
     }
 
 }
+==============================================================
+The situations that cause a TempDB table to be dropped are:
+
+1) Variable goes out of scope.
+2) A controlled restart of the AOS.
+3) A restart of the database system.
+4) Closure of the AX32.exe client.
+5) From Online Users form.
