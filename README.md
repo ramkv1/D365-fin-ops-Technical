@@ -2,7 +2,7 @@
 
 ### Self Introduction
 
-A highly motivated Microsoft Dynamics AX/D365 Junior Technical Consultant with experience in ERP development, designing, implementing, modifying, troubleshooting, testing and debugging Microsoft Dynamics ERP software product using X++ programming language. Strong knowledge of SQL Server and SSRS Reports. Strong engineering professional with a Bachelor's degree focused on Computer Science. A collaborative person, passionate to learn and develop the latest skills.
+A highly motivated Microsoft Dynamics AX/D365 Junior Technical Consultant with experience in ERP development, designing, implementing, modifying, troubleshooting, testing and debugging Microsoft Dynamics ERP software product using X++ programming language. Strong knowledge of SQL Server and SSRS Reports. Strong engineering professional with a Bachelor's degree. A collaborative person, passionate to learn and develop the latest skills.
 
 ![alt text](images/AxArchitexture.png)
 
